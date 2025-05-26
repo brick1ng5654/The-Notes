@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Notes</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="lib/polyfill.min.js"></script>
+  <script src="lib/mathjax.js"></script>
+</head>
+<body>
+  <div id="notesListView">
+    <h2>Notes</h2>
+    <ul id="noteList"></ul>
+    <button id="createNote">+ New Note</button>
+  </div>
+
+  <div id="noteEditorView" style="display: none;">
+    <h2 id="editorTitle">New Note</h2>
+    <input type="text" id="noteTitle" placeholder="Title" style="width: 100%; box-sizing: border-box;" />
+    <div id="formattingPanel">
+        <div class="format-row">
+            <button class="format-btn" data-format="bold" title="Bold">B</button>
+            <button class="format-btn" data-format="italic" title="Italic">I</button>
+            <button class="format-btn" data-format="underline" title="Underline">U</button>
+            <button class="format-btn" data-format="strikethrough" title="Strikethrough">S</button>
+            <button class="format-btn" data-format="bullet" title="List">•</button>
+        </div>
+        <div class="format-row">
+            <button class="format-btn" data-format="code" title="Code">```</button>
+            <button class="format-btn" data-format="latex" title="LaTeX formula">∑</button>
+            <button class="format-btn" data-format="link" title="Link">🔗</button>
+            <button class="format-btn" data-format="clear" title="Clear formatting">⌫</button>
+        </div>
+    </div>
+    <div id="noteContent" contenteditable="true" placeholder="Note text..." spellcheck="false"></div>
+
+    <div style="display: flex; justify-content: space-between; gap: 5%;">
+        <button id="saveNote">Save</button>
+        <button id="cancelEdit">Back</button>
+    </div>
+  </div>
+
+  <script src="sidebar.js"></script>
+</body>
+</html>
