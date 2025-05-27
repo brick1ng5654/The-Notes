@@ -1,48 +1,51 @@
-# The Notes — расширение для Firefox
+# The Notes — Firefox Extension
 
-**The Notes** — это удобное расширение для браузера Firefox, добавляющее боковую панель с возможностью создавать, редактировать и форматировать заметки. Интерфейс напоминает редактор Word и поддерживает стили, списки, вставку формул и кода.
+**The Notes** is a convenient sidebar extension for Firefox that allows you to create, edit, and format notes.  
+Its interface is inspired by Word-like editors and supports rich text styling, lists, code blocks, and LaTeX formulas.
 
-## Возможности
+## Features
 
-- Неограниченное количество заметок
-- Форматирование текста:
-  - **Жирный**, _курсив_, __подчёркнутый__, ~~зачёркнутый__
-  - • Списки
-  - `Блоки кода`
-  - Ссылки
-  - Поддержка формул LaTeX (с рендером MathJax)
-- Переключение светлой/тёмной темы
-- Drag & Drop для сортировки заметок
-- Отметка важных заметок
-- Удаление и редактирование
+- Unlimited number of notes
+- Rich text formatting:
+  - **Bold**, _italic_, __underline__, ~~strikethrough~~
+  - • Bullet lists
+  - `Code blocks`
+  - Links
+  - LaTeX formula support (rendered with MathJax)
+- Light/Dark theme toggle
+- Drag & Drop to reorder notes
+- Mark notes as important 
+- Edit and delete existing notes
 
-## Установка
+## Installation (Temporary)
 
-1. Открой `about:debugging` в Firefox
-2. Выбери **This Firefox** → нажми **Load Temporary Add-on**
-3. Укажи файл `manifest.json` из папки проекта
+1. Open `about:debugging` in Firefox
+2. Select **This Firefox** → click **Load Temporary Add-on**
+3. Select the `manifest.json` file in the project folder
 
-> Замечание: это временная установка. При перезапуске браузера нужно загружать снова.
+> Note: this is a temporary installation. It will be removed after restarting Firefox.
 
-## Пример
+## Example
 
-![Пример](/screenshots/1.png)
-
-![Пример](/screenshots/2.png)
+![Example](/screenshots/1.png)  
+![Example](/screenshots/2.png)
 
 ## TODO
 
-- [ ] Поддержка `Ctrl+B`, `Ctrl+I`, `Ctrl+U` для быстрого форматирования
-- [ ] Экспорт заметок в `.md`, `.html`, `.json`
-- [ ] Импорт заметок из файлов
-- [ ] Система тегов и фильтрация по тегам
-- [ ] Поиск по заголовкам и содержимому
-- [ ] Быстрое создание заметки из выделенного текста на странице (через context menu)
-- [ ] Возможность закреплять заметки (pin to top)
-- [ ] Поддержка напоминаний (через Web Notifications API)
-- [ ] Автосохранение изменений
-- [ ] Синхронизация через Firefox Sync API
-- [ ] Поддержка нескольких боковых панелей
-- [ ] Облачная синхронизация через GitHub Gist или WebDAV
-- [ ] Расширенная статистика (кол-во слов, даты редактирования)
+- [ ] Support for `Ctrl+B`, `Ctrl+I`, `Ctrl+U` keyboard shortcuts
+- [ ] Export notes as `.md`, `.html`, `.json`
+- [ ] Import notes from file
+- [ ] Tag system and tag filtering
+- [ ] Search in titles and content
+- [ ] Create note from selected text on a web page (via context menu)
+- [ ] Pin important notes to top
+- [ ] Reminder support (via Web Notifications API)
+- [ ] Autosave while typing
+- [ ] Sync using Firefox Sync API
+- [ ] Support for multiple sidebars
+- [ ] Cloud sync (GitHub Gist, WebDAV, etc.)
+- [ ] Statistics: word count, edit dates, etc.
 
+---
+
+Created with care by **brick1ng5654**
